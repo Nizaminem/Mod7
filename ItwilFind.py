@@ -2,7 +2,8 @@
 import string
 
 class WordsFinder:
-    def _init_(self, *file_names):
+
+    def __init__(self, *file_names):
         self.file_names = file_names
 
     def get_all_words(self):
@@ -56,7 +57,7 @@ class WordsFinder:
         return result
 
 
-finder = WordsFinder('D:\\низаим\\PythonProjectForUrbanUniversityd\\Module7\\test_file.txt')
+finder = WordsFinder('test_file.txt')
 
 # Получить все слова из файлов
 print(finder.get_all_words())
